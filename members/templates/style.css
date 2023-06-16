@@ -1,0 +1,30 @@
+.navbar-new {
+  background-color: rgba(0, 0, 0, 0.466) !important;
+}
+.navbar-new .navbar-brand {
+  color: #fcfcfc !important;
+}
+.navbar-new .nav-link {
+  color: #fcfcfc !important;
+}
+.mr-10 {
+  margin-right: 50px !important;
+}
+
+.btn1 {
+  border-radius: 5px !important;
+  border-color: black !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  height: 30px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  color: black !important;
+  background-color: white !important;
+  border-color: black !important;
+}
+.btn1:hover {
+  color: white !important;
+  background-color: black !important;
+  border-color: transparent !important;
+}

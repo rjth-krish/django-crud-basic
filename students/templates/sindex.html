@@ -1,0 +1,172 @@
+{% extends 'loginview.html' %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <title>Student Registrations</title>
+  </head>
+  <body>
+    {% block base %}
+    <form method="POST" style="width: 450px">
+      {% csrf_token %}
+      <div class="container mt-2">
+        <div class="row">
+          <div class="col">
+            <div class="form-floating mb-2">
+              <input
+                type="number"
+                name="s2"
+                class="form-control"
+                id="floatingInput"
+                placeholder="number"
+                style="
+                  border-radius: 5px !important;
+                  border-color: black !important;
+                  color: black !important;
+                  background-color: white !important;
+                  border-color: #333fab !important;
+                "
+              />
+              <label for="floatingInput">Student ID</label>
+            </div>
+            <div class="form-floating mb-2">
+              <input
+                type="text"
+                name="n2"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name"
+                style="
+                  border-radius: 5px !important;
+                  border-color: black !important;
+                  color: black !important;
+                  background-color: white !important;
+                  border-color: #333fab !important;
+                "
+              />
+              <label for="floatingInput">Name</label>
+            </div>
+            <div class="form-floating mb-2">
+              <input
+                type="number"
+                name="a2"
+                class="form-control"
+                id="floatingInput"
+                placeholder="number"
+                style="
+                  border-radius: 5px !important;
+                  border-color: black !important;
+                  color: black !important;
+                  background-color: white !important;
+                  border-color: #333fab !important;
+                "
+              />
+              <label for="floatingInput">Age</label>
+            </div>
+            <div class="form-floating mb-2">
+              <select
+                class="form-select"
+                id="floatingSelect"
+                name="g2"
+                aria-label="Floating label select example"
+                style="
+                  border-radius: 5px !important;
+                  border-color: black !important;
+                  color: black !important;
+                  background-color: white !important;
+                  border-color: #333fab !important;
+                "
+              >
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+                <option value="Other">Not wish to specify</option>
+              </select>
+              <label for="floatingSelect">Select Gender</label>
+            </div>
+            <div class="form-floating mb-2">
+              <input
+                type="email"
+                name="e2"
+                class="form-control"
+                id="floatingInput"
+                placeholder="email@example.com"
+                style="
+                  border-radius: 5px !important;
+                  border-color: black !important;
+                  color: black !important;
+                  background-color: white !important;
+                  border-color: #333fab !important;
+                "
+              />
+              <label for="floatingInput">Email Address</label>
+            </div>
+            <div class="form-floating mb-2">
+              <select
+                class="form-select"
+                id="floatingSelect"
+                name="c2"
+                aria-label="Floating label select example"
+                style="
+                  border-radius: 5px !important;
+                  border-color: black !important;
+                  color: black !important;
+                  background-color: white !important;
+                  border-color: #333fab !important;
+                "
+              >
+                <option value="VIII">8</option>
+                <option value="IX">9</option>
+                <option value="X">10</option>
+                <option value="XI">11</option>
+                <option value="XII">12</option>
+              </select>
+              <label for="floatingSelect">Select Class</label>
+            </div>
+            <div
+              class="flex-row d-flex"
+              style="justify-content: center; align-items: center"
+            >
+              <input
+                type="submit"
+                name="Register"
+                onMouseOver="this.style.color='black'"
+                onMouseOut="this.style.color='#333fab'"
+                style="
+                  border-radius: 5px !important;
+                  border-color: black !important;
+                  font-size: 14px !important;
+                  font-weight: 500 !important;
+                  height: 30px !important;
+                  padding-left: 20px !important;
+                  padding-right: 20px !important;
+                  color: black !important;
+                  background-color: white !important;
+                  border-color: #333fab !important;
+                "
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    {% endblock %}
+  </body>
+</html>
